@@ -1,16 +1,13 @@
-#include <stdio.h>
 #include <pico/stdlib.h>
 #include <pico/sync.h>
 
-#define IN_PIN 14
+#define IN_PIN 10
 #define OUT_PIN 0
-#define DELAY_MS 50
 
 int toggle = 1;
 void irq_callback(uint gpio, uint32_t event_mask)
 {
     if (gpio != IN_PIN) return;
-    sleep_ms(DELAY_MS);
     toggle = !toggle;
     if (event_mask & GPIO_IRQ_EDGE_RISE) {
         gpio_put(OUT_PIN, true);

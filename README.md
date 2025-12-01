@@ -27,12 +27,24 @@ P = V * I = 31.7 * 5 = 158.5 mW
 
 4. Interrupt to toggle a GPIO 
 At 1kHz:
+I = 28.37 mA
+V = 5V
+P = V * I = 28.37 * 5 = 141.85 mW
 
 At 10kHz:
+I = 28.38 mA
+V = 5V
+P = V * I = 28.38 * 5 = 141.9 mW
 
 At 100kHz:
+I = 28.41 mA
+V = 5V
+P = V * I = 28.41 * 5 = 142.05 mW
 
 At 2MHz:
+I = 26.48 mA
+V = 5V
+P = V * I = 26.48 * 5 = 132.4 mW
 
 5. Sleep demo
 First 10 seconds:
