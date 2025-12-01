@@ -21,6 +21,8 @@ V = 5V
 P = V * I = 31.55 * 5 = 157.75 mW
 
 3. Run a busy loop to get 100% CPU utilization
-I =  mA
+I = 31.7 mA
 V = 5V
-P = V * I =  * 5 = 157.75 mW
+P = V * I = 31.7 * 5 = 158.5 mW
+
+4. Interrupt to toggle a GPIO 

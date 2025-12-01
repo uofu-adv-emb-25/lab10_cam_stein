@@ -21,11 +21,9 @@ void main_task(__unused void *params) {
     gpio_init(LED_pin);
     gpio_set_dir(LED_pin, GPIO_OUT);
     
-    while (true)
-    {
-        gpio_put(LED_pin, 1);
-        vTaskDelay(500);
-        gpio_put(LED_pin, 0);
+    while (1) {
+        gpio_put(LED_pin, !gpio_get(LED_pin));
+        sleep_ms(500);
     }
 }
 
