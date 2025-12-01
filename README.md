@@ -9,7 +9,16 @@ To add the Pico configuration files:
 1. Copy `rp2040_spinlock.py` and `rp2040_divider.py` to the `scripts/pydev` directory of your Renode installation.
 1. Copy `rpi_pico_rp2040_w.repl` to the `platforms/cpus` directory.
 
+Activity 1:
+The external power supply pin: VSYS
+Voltage: 1.8V to 5.5V
 
+Activity 2:
+WAKE_EN default = 0xFFFF_FFFF
+SLEEP_EN default = 0xFFFF_FFFF
+ENABLE default = 0x0000_0000
+
+Activity 3:
 1. Blink an LED, using sleep_ms to delay iterations.
 I = 31.78 mA
 V = 5V
