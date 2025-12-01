@@ -26,3 +26,14 @@ V = 5V
 P = V * I = 31.7 * 5 = 158.5 mW
 
 4. Interrupt to toggle a GPIO 
+First 5 seconds:
+I = 18 mA
+V = 5V
+P = V * I = 18 * 5 = 90 mW
+Next 5 seconds:
+I = 1.52 mA
+V = 5V
+P = V * I = 1.52 * 5 = 7.6 mW
+
+5. Sleep demo
+
